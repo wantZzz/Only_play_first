@@ -16,6 +16,6 @@ chrome.runtime.onInstalled.addListener(function (details){
         title: '只播放第一部影片',
         contexts: ['link'],
 		documentUrlPatterns: ["https://www.youtube.com/*", "https://youtu.be/*"],
-		targetUrlPatterns: ["https://www.youtube.com/*"]
+		targetUrlPatterns: ["https://www.youtube.com/watch*"]
     });
 });
