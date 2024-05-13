@@ -14,6 +14,8 @@ chrome.runtime.onInstalled.addListener(function (details){
         id: 'YOPF_YoutubeUrlGet',
         type: 'normal',
         title: '只播放第一部影片',
-        contexts: ['link']
+        contexts: ['link'],
+		documentUrlPatterns: ["https://www.youtube.com/*", "https://youtu.be/*"],
+		targetUrlPatterns: ["https://www.youtube.com/*"]
     });
 });
