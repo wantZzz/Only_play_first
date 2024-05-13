@@ -1,0 +1,26 @@
+{
+    "manifest_version": 3,
+    "name": "Youtube Only Play First",
+    "version": "0.0.0",
+    "description": "A browser extension that can add the option to play the first video alone in the playlist",
+    "permissions": [
+		"activeTab",
+		"contextMenus"
+    ],
+    "action": {
+        "default_icon": {
+            "16": "icon.png",
+            "48": "icon.png",
+            "128": "icon.png"
+        }
+    },
+	"icons": {
+		"16": "icon.png",
+		"48": "icon.png",
+		"128": "icon.png"
+	},
+	"background": {
+		"service_worker": "background.js",
+		"type": "module"
+	}
+}
